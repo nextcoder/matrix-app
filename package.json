@@ -2,9 +2,13 @@
   "name": "matrix-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://nextcoder.github.io/matrix-app",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "pretty": "prettier --check --write .",
+    "export": "next build",
+    "deploy": "next build && npx gh-pages -d out",
     "start": "next start",
     "lint": "eslint"
   },
@@ -25,6 +29,7 @@
     "eslint-config-next": "16.1.6",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-unused-imports": "^4.3.0",
+    "gh-pages": "^6.3.0",
     "prettier": "^3.7.4",
     "prettier-plugin-tailwindcss": "^0.7.2",
     "tailwindcss": "^4",
