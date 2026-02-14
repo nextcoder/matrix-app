@@ -5,7 +5,7 @@ import MatrixConfig from "@/components/matrix/MatrixConfig";
 export default function Home() {
   return (
     <MatrixProvider>
-      <div className="container flex min-h-screen flex-col items-center justify-center p-6">
+      <div className="container mx-auto flex min-h-screen flex-col items-center justify-center p-6">
         <MatrixConfig />
         <Matrix />
       </div>
